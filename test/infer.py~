@@ -1,0 +1,7 @@
+import torch
+from torch.nn import Conv2d
+
+if __name__ == '__main__':
+    input = torch.randn(3, 224, 224)
+    conv1 = Conv2d(3, 16, 4)
+    output = conv1(input)
